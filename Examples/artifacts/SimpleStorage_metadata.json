@@ -1,0 +1,302 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "$x",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "$name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Unauthorized",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "UnauthorizedSet",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "storedData",
+						"type": "uint8"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "decrementValue",
+						"type": "uint8"
+					}
+				],
+				"name": "Decrement",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "storedData",
+						"type": "uint8"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "incrementValue",
+						"type": "uint8"
+					}
+				],
+				"name": "Increment",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint8",
+						"name": "storedData",
+						"type": "uint8"
+					}
+				],
+				"name": "Set",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "$a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "$b",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "$account",
+						"type": "address"
+					}
+				],
+				"name": "getWhitelisted",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isWhiteListed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SimpleStorage.Member",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "$x",
+						"type": "uint8"
+					}
+				],
+				"name": "increment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "$x",
+						"type": "uint8"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "$account",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isWhiteListed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct SimpleStorage.Member",
+						"name": "$member",
+						"type": "tuple"
+					}
+				],
+				"name": "setWhitelisted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "$account",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "$name",
+						"type": "string"
+					}
+				],
+				"name": "setWhitelisted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "$account",
+						"type": "address"
+					}
+				],
+				"name": "unsetWhitelisted",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Examples/Storage.sol": "SimpleStorage"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Examples/Storage.sol": {
+			"keccak256": "0x4cd5ce08c47bdc909a3040dccde1ffd65117f2dc79637cec5a5a59847ecab412",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dcd6c0c6559b30cd59104b54487bb4ab8fc087ab8ffa4aba6498028e92b322ef",
+				"dweb:/ipfs/QmcBqAni6kf1L1ejpunvUnDhtDhh2A8BAMedhMbndTCuj4"
+			]
+		}
+	},
+	"version": 1
+}
