@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes3[2]",
+						"name": "",
+						"type": "bytes3[2]"
+					}
+				],
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint32",
+						"name": "x",
+						"type": "uint32"
+					},
+					{
+						"internalType": "bool",
+						"name": "y",
+						"type": "bool"
+					}
+				],
+				"name": "baz",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "r",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"name": "sam",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Examples\\ABIEncoding.sol": "Foo"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Examples\\ABIEncoding.sol": {
+			"keccak256": "0x1df9a0997b554b3da94eb027edc4a57349591f7fd6b9e09f1c1a404094440460",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://120078425b3b43ee3f1e3246c0a2f91999047326c30b337380df416061d43b66",
+				"dweb:/ipfs/QmQacuaiiRL9T9d6UsTsex1RcSdqvTXvBLyRjtQfBu8ajb"
+			]
+		}
+	},
+	"version": 1
+}
