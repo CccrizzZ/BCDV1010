@@ -43,7 +43,7 @@ contract GBCToken is ERC20, Ownable {
     }
     
 
-    // issue token to contributor function for external contract
+    // issue token from owner's account to contributor function for external contract
     function issueToken(address recipient, uint256 amount) external limitedTime returns (bool){
         _transfer(owner(), recipient, amount);
         return true;
