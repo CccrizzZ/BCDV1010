@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\00WebDevProject\\BCDV1010\\Staking-Lab\\contracts\\Staker.sol": {
+      "lastModificationDate": 1637962881137,
+      "contentHash": "1b92c6b8a4d278782f8a11f95f0d8e0d",
+      "sourceName": "contracts/Staker.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.6"
+      ],
+      "artifacts": [
+        "ExampleExternalContract",
+        "Staker"
+      ]
+    }
+  }
+}
